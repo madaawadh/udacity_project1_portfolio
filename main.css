@@ -1,0 +1,220 @@
+* {
+    box-sizing: border-box;
+    color:#ffffff;
+  }
+html{
+    background-color: #1c1d24;
+    min-height: 100vh;
+    margin: 0;
+}
+img{
+    cursor:pointer;
+}
+header{
+    position: fixed;
+top:0;
+background-color: transparent;
+padding: 10px;
+width:100%;
+display:flex;
+justify-content:space-between;
+}
+span{
+    color:#dc5863;
+}
+p{
+    width:75%;
+}
+nav{
+ position: fixed;   
+ top:70px;
+width:8%;
+border-bottom-right-radius: 5px;
+border-top-right-radius: 5px;
+ background-color: transparent;
+height:500px;
+display:flex;
+justify-content:space-around;
+flex-direction: column;
+
+}
+.href{
+    height:10vh;
+}
+.margin{
+   margin-left:130px;
+   height:90vh;
+}
+
+  
+a{
+  width:100%;
+  font-size: 20px;
+    text-decoration: none;
+    color:#b0b2c1;
+}
+
+a:hover{
+      color:#ffffff;
+  }
+
+footer{
+   position: fixed;
+    background-color: #1c1d24; 
+    padding: 15px;
+    bottom:0;
+    width:100%;
+    text-align: center;
+    background-color:rgba(255, 255, 255, .1);
+    left:0;
+}
+.p1 div{
+margin-top: 13%;
+margin-left: 4%;
+}
+.p1 div h1{
+    font-size:80px;
+    height:40px;
+}
+
+.p1 div h2{
+    font-style: italic;
+}
+.p2{
+    display: flex;
+    flex-wrap: wrap;
+}
+.p2 .first{
+    margin-top: 5%;
+    margin-left: 17%;
+    width:30%;
+    height:69%;
+    background-color:#ebebeb;
+    box-shadow: 0px 4px 8px 6px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+    .p2 .second{
+        margin-top: 5%;
+        width:30%;
+        height:69%;
+        background-color:transparent;
+        box-shadow: 0px 4px 8px 6px rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+       
+    }
+    .divs{
+        height:70px;
+    }
+    .icons{
+        display:inline-block;
+        width:30%;
+        text-align: center;
+    }
+    
+  input,textarea{
+      background-color: transparent;
+      border-color:transparent;
+      border-bottom-color: whitesmoke;
+      width:45%;
+  }
+button{
+background-color: #73f6d3;
+color:black;
+font-size:15px;
+border:none;
+width:100px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: #ffff;
+    /* color:white; */
+}
+    .p2 div h2{
+        color:black;
+        margin-left: 15%;
+    }
+    .p2 div p{
+        color:black;
+        margin-left: 15%;
+    }
+    .p3 div{
+     margin-left:20%;
+     margin-top:10%;
+    }
+ .p3 div h1{
+    color: #73f6d3;
+ }
+
+ .typping{
+     position:absolute;
+    color:#73f6d3;
+    font-size: 20px;
+    overflow: hidden;
+    border-right:2px solid #73f6d3;
+    margin: 0 auto;
+    white-space: nowrap;
+    letter-spacing: .15em;
+    animation: writing 3.5s steps(30, end),blink 1s linear 1s infinite; 
+}
+@media screen and (min-width:520px) and (max-width:790px) {
+    .p2 .first{
+        /* margin-top: 0%; */
+        margin-left: 0%;
+        /* height:60%; */
+        width:47%;
+   
+        }
+        .p2 .second{
+            width:47%;
+            /* height:45%; */
+      
+ 
+        }
+}
+@media screen and (max-width:520px){
+    nav{
+        left:8%;
+        top:90px;
+       width:100%;
+       flex-direction: row;
+       height:10%;
+       } 
+       .margin{
+        margin-top:100px;
+        margin-left:10px;
+        height:80vh;
+     }
+     .logo{
+         height:50px;
+         width:50px;
+     }
+     .p2 .first{
+        margin-top: 0%;
+        margin-left: 0%;
+        height:60%;
+        width:100%;
+       
+        }
+        .p2 .second{
+            width:100%;
+            height:45%;
+        }
+        .divs{
+            display:none;
+        }
+       
+        .p3 div{
+            margin-left:20%;
+           }
+        input ,textarea{
+            width:70%; 
+        }
+       
+}
+
+ @keyframes blink {
+    from, to { border-color: transparent }
+    50% { border-color: #73f6d3}
+  }
+  @keyframes writing {
+    from{ width: 0 }
+  to { width:110px}
+  }
